@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2E2E2E">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Existing content in Notes Page -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="#1\nSELECT email from Person GROUP BY email having COUNT(email) > 1;\n\n#2\nSELECT DISTINCT(p1.email) from Person p1, Person p2
+where p1.id != p2.id AND p1.email = p2.email;\n\nIntuition:\nIdentify emails that appear more than once in the table by grouping the data and counting occurrences.\n\nApproach:\n1.Group by email: Group the rows by the email field.\n2.Count occurrences: Count the number of rows in each group.\n3.Filter duplicates: Select groups where the count is greater than one.\n\nComplexity:\nTime complexity:O(nlogk), where n is the number of rows and k is the number of unique email addresses.\n\nSpace Complexity:O(n) temporary storage for intermediate results during sorting and aggregation."
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:paddingBottom="16dp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Solution 1\n01/23/2024\nSolution 2\n01/23/2024\nSolution 3\n01/23/2024"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText" />
+
+        <!-- Record Button -->
+        <Button
+            android:id="@+id/recordButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Recording"
+            android:layout_marginTop="16dp"
+            tools:ignore="HardcodedText" />
+
+        <!-- Recording Status Text -->
+        <TextView
+            android:id="@+id/recordingStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+</ScrollView>

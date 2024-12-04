@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#2E2E2E">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Table: Person\n\n| Column Name | Type |\n| id          | int  |\n| email       | varchar |\n\nProblem Statement: Write a solution to report all the duplicate emails.\n\nNumber of records n : 1-1,000,000"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:padding="16dp" />
+</RelativeLayout>

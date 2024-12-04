@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2E2E2E">
+
+    <!-- Header Layout -->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="#333333">
+
+        <!-- Problems Icon -->
+        <ImageView
+            android:id="@+id/iconProblems"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_problems"
+            android:contentDescription="Problems"
+            android:padding="8dp" />
+
+        <!-- Pseudocode Icon -->
+        <ImageView
+            android:id="@+id/iconPseudocode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_pseudocode"
+            android:contentDescription="Pseudocode"
+            android:padding="8dp" />
+
+        <!-- Video Icon -->
+        <ImageView
+            android:id="@+id/iconVideo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_video"
+            android:contentDescription="Video"
+            android:padding="8dp" />
+
+        <ImageView
+            android:id="@+id/iconShorts"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_shorts"
+            android:contentDescription="YouTube Shorts"
+            android:padding="8dp" />
+
+        <!-- Notes Icon -->
+        <ImageView
+            android:id="@+id/iconNotes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_notes"
+            android:contentDescription="Notes"
+            android:padding="8dp" />
+
+    </LinearLayout>
+
+    <!-- Fragment Container for Content Views -->
+    <FrameLayout
+        android:id="@+id/fragmentsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/headerLayout"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>

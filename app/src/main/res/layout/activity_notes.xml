@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2E2E2E">
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="#333333">
+
+        <!-- Problems Icon -->
+        <ImageView
+            android:id="@+id/iconProblems"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_problems"
+            android:padding="8dp" />
+
+        <!-- Pseudocode Icon -->
+        <ImageView
+            android:id="@+id/iconPseudocode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_pseudocode"
+            android:padding="8dp" />
+
+        <!-- Video Icon -->
+        <ImageView
+            android:id="@+id/iconVideo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_video"
+            android:padding="8dp" />
+
+        <!-- Notes Icon -->
+        <ImageView
+            android:id="@+id/iconNotes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_notes"
+            android:padding="8dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Existing content in Notes Page -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#1\nSELECT email from Person\ngroup by email\nhaving count(email) greater than 1;\n\n#2\nSELECT DISTINCT(p1.email) from Person p1 JOIN Person p2\nwhere p1.id not equals p2.id AND p1.email equals p2.email;"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:paddingBottom="16dp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Solution 1\n01/23/2024\nSolution 2\n01/23/2024\nSolution 3\n01/23/2024"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText" />
+
+        <!-- Record Button -->
+        <Button
+            android:id="@+id/recordButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Recording"
+            android:layout_marginTop="16dp"
+            tools:ignore="HardcodedText" />
+
+        <!-- Recording Status Text -->
+        <TextView
+            android:id="@+id/recordingStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+</ScrollView>
